@@ -1,0 +1,149 @@
+{"98101": [
+  {
+    "type": "Electrical Upgrade",
+    "required": true,
+    "permit_type": "Trade Permit",
+    "required_documents": ["Scope of Work", "Load Calculation", "Electrical Diagram"],
+    "fee": 400,
+    "processing_time": "2 weeks",
+    "inspection_required": true,
+    "notes": "Required for panel replacements or circuit expansions above 20 amps.",
+    "code_reference": {
+      "title": "Seattle Electrical Code - Chapter 80",
+      "url": "https://example.com/seattle-electrical-code"
+    },
+    "common_contractors": ["ABC Electric Co.", "Evergreen Electricians"]
+  },
+  {
+    "type": "Plumbing Repair",
+    "required": true,
+    "permit_type": "Trade Permit",
+    "required_documents": ["Plumbing Fixture List", "Piping Diagram"],
+    "fee": 250,
+    "processing_time": "1–2 weeks",
+    "inspection_required": true,
+    "notes": "Usually required when relocating or replacing multiple fixtures.",
+    "code_reference": {
+      "title": "Seattle Plumbing Code - Section 603",
+      "url": "https://example.com/seattle-plumbing-code"
+    },
+    "common_contractors": ["Puget Plumbing Pros", "RainCity Pipes"]
+  },
+  {
+    "type": "Fence Permit",
+    "required": false,
+    "permit_type": "Zoning or Site Permit",
+    "required_documents": ["Site Plan", "Fence Detail Drawing"],
+    "fee": 100,
+    "processing_time": "3 days",
+    "inspection_required": false,
+    "notes": "Permits only required for fences over 6 feet or along property lines.",
+    "code_reference": {
+      "title": "Seattle Land Use Code - Section 23.44.014",
+      "url": "https://example.com/seattle-fence-regulations"
+    },
+    "common_contractors": ["Urban Fencing Co.", "Northwest Fence & Rail"]
+  }
+],
+    "98103": [
+    {
+      "type": "Detached Garage Construction",
+      "permit_type": "Building Permit",
+      "required": true,
+      "required_documents": ["Site Plan", "Foundation Plan", "Elevation Views"],
+      "fee": 950,
+      "processing_time": "3–4 weeks",
+      "inspection_required": true,
+      "notes": "Required for garages larger than 200 sq. ft or with utilities.",
+      "code_reference": {
+        "title": "Seattle Residential Code - Chapter 3",
+        "url": "https://www.seattle.gov/sdci/codes"
+      },
+      "common_contractors": ["Seattle Garages Inc.", "Greenbuild Contractors"]
+    },
+    {
+      "type": "Interior Remodel",
+      "permit_type": "STFI Permit",
+      "required": true,
+      "required_documents": ["Floor Plan", "Scope of Work", "Energy Worksheet"],
+      "fee": 600,
+      "processing_time": "2–3 weeks",
+      "inspection_required": true,
+      "notes": "STFI eligible if non-structural. Otherwise, full building review required.",
+      "code_reference": {
+        "title": "Seattle Residential Code - R301",
+        "url": "https://www.seattle.gov/sdci/codes"
+      },
+      "common_contractors": ["Wallingford Remodelers", "Pacific Northwest Builders"]
+    }
+  ],
+
+  "98107": [
+    {
+      "type": "Basement ADU Conversion",
+      "permit_type": "Land Use + Building Permit",
+      "required": true,
+      "required_documents": ["Site Plan", "Floor Plans", "Egress Details", "Parking Plan"],
+      "fee": 1800,
+      "processing_time": "5–7 weeks",
+      "inspection_required": true,
+      "notes": "Must meet ceiling height, egress, and off-street parking rules.",
+      "code_reference": {
+        "title": "Seattle ADU Regulations",
+        "url": "https://www.seattle.gov/sdci/codes"
+      },
+      "common_contractors": ["Ballard Basement Co.", "Dwell ADU Specialists"]
+    }
+  ],
+
+  "98115": [
+    {
+      "type": "Roof Replacement",
+      "permit_type": "STFI Permit",
+      "required": true,
+      "required_documents": ["Roof Plan", "Scope of Work"],
+      "fee": 800,
+      "processing_time": "2–3 weeks",
+      "inspection_required": true,
+      "notes": "Permit required for full tear-offs or changes to roofing structure/material.",
+      "code_reference": {
+        "title": "Seattle Residential Code - Roofs",
+        "url": "https://www.seattle.gov/sdci/codes"
+      },
+      "common_contractors": ["North End Roofing", "Ravenna Exteriors"]
+    },
+    {
+      "type": "Solar Panel Installation",
+      "permit_type": "Electrical + STFI Permit",
+      "required": true,
+      "required_documents": ["Site Plan", "Roof Diagram", "Wiring Plan"],
+      "fee": 500,
+      "processing_time": "2 weeks",
+      "inspection_required": true,
+      "notes": "Permit required if modifying roof load or tying into panel.",
+      "code_reference": {
+        "title": "Seattle Solar Guidelines",
+        "url": "https://www.seattle.gov/sdci/permits/common-projects/solar-projects"
+      },
+      "common_contractors": ["SunSeattle", "Emerald Solar Installers"]
+    }
+  ],
+
+  "98122": [
+    {
+      "type": "Deck Construction",
+      "permit_type": "STFI Permit",
+      "required": true,
+      "required_documents": ["Site Plan", "Deck Framing Plan", "Elevation View"],
+      "fee": 550,
+      "processing_time": "2–3 weeks",
+      "inspection_required": true,
+      "notes": "Decks above 30” require a permit and guardrails.",
+      "code_reference": {
+        "title": "Seattle Residential Code - Decks (R507)",
+        "url": "https://www.seattle.gov/sdci/codes"
+      },
+      "common_contractors": ["Capitol Deck Co.", "Seattle Outdoor Builders"]
+    }
+  ]
+}
