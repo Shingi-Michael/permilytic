@@ -119,18 +119,42 @@ def filter_pricing():
     return jsonify(filtered_fee)
 
 
-@app.route("/permits", methods=["POST"])
-def requested_permit_type():
-    data = request.get_json()
-    get_zipcode = data.get("zipcode")
-    get_project_type = data.get("project_type")
-    permits = permit_data.get(get_zipcode)
+@app.route("/permits", methods=["GET", "POST"], strict_slashes=False)
+def permit_handler():
+    print("Request method:", request.method)
+    if request.method == "POST":
+        data = request.get_json(force=True)
+        get_zipcode = data.get("zipcode")
+        get_project_type = data.get("project_type")
+        permits = permit_data.get(get_zipcode)
 
-    for permit in permits:
-        if permit["type"] == get_project_type:
-            return jsonify(permit)
+        for permit in permits:
+            if permit["type"] == get_project_type:
+                return jsonify(permit)
+        return jsonify({"error": "no match found"}), 404
 
-    return jsonify({"error": "no match found"}), 404
+    elif request.method == "GET":
+        zipcode = request.args.get("zipcode")
+        project_type = request.args.get("project_type")
+
+        if not zipcode:
+            return jsonify({"error": "zipcode is required"}), 400
+        permits = permit_data.get(zipcode)
+
+        if not permits:
+            return jsonify({"error": "no permits found for that zipcode"})
+
+        if project_type:
+            filtered = [p for p in permits if p["type"].lower() ==
+                        project_type.lower()]
+
+            if filtered:
+                return jsonify(filtered)
+            else:
+                return jsonify({"error": "No permits found matching that project type"}), 404
+        else:
+            # Return all permits if no project_type specified
+            return jsonify(permits)
 
 
 if __name__ == "__main__":
