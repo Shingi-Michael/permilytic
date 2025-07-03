@@ -5,12 +5,116 @@
     text-align: center;
 }
 
-
-
-.card {
-    padding: 2em;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333333;
+    margin: 0;
+    padding: 0;
 }
 
-.read-the-docs {
-    color: #888;
+button {
+    font-size: 1rem;
+    background-color: #0077cc;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 0.75rem 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+.permit-card {
+    background: #ffffff;
+    color: #333333;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.permit-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    min-height: 150px;
+}
+
+.permit-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex: 1;
+}
+
+.permit-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.permit-notes {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.detail {
+    text-align: left;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 1rem;
+}
+
+.form-row input {
+    padding: 0.75rem;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-row button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form-row button:hover {
+    background-color: #005fa3;
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.loading {
+    color: #0077cc;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.permit-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    margin-top: 1rem;
 }
